@@ -3,6 +3,7 @@ from django.views import generic
 from django.urls import reverse_lazy
 from .models import Greeting
 
+
 class IndexView(generic.ListView):
     template_name = 'greetings/index.html'
     context_object_name = 'greeting_list'
